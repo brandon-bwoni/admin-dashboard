@@ -1,6 +1,5 @@
 import Image from "next/image";
 import MenuLink from "./MenuLink";
-import styles from "./sidebar.module.css";
 
 import {
   MdDashboard,
@@ -80,7 +79,7 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <div className="sticky top-[40px]">
+    <div className="bg-gray-300 pt-8 px-4 shadow-xl pb-6">
       <div className="flex items-center gap-5 mb-5">
         <Image
           className="rounded-full object-cover"
@@ -91,13 +90,18 @@ const Sidebar = () => {
         />
       </div>
       <div className="flex flex-col">
-        <span className="font-medium">John Doe</span>
-        <span className="text-[12px]"> Administrator</span>
+        <span className="font-semibold text-lg text-slate-800">John Doe</span>
+        <span className="text-[12px] text-slate-500 font-medium">
+          {" "}
+          Administrator
+        </span>
       </div>
       <ul className="list-none">
         {menuItems.map((cat) => (
-          <li className={styles.title} key={cat.title}>
-            <span className="font-bold text-[13px] my-[10px]">{cat.title}</span>
+          <li className="font-bold text-base" key={cat.title}>
+            <span className="font-bold text-[14px] text-slate-700 text my-[10px]">
+              {cat.title}
+            </span>
             {cat.list.map((item) => (
               <MenuLink item={item} key={item.title} />
             ))}

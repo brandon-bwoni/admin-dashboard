@@ -1,13 +1,14 @@
 import Image from "next/image";
-import styles from "./transactions.module.css";
 
 const Transactions = () => {
   return (
-    <div className="p-5 rounded-xl">
-      <h2 className="mb-5 font-mono ">Latest Transactions</h2>
+    <div className="p-5 rounded-xl bg-gray-300 shadow-lg">
+      <h2 className="mb-5 font-medium text-2xl text-gray-700">
+        Latest Transactions
+      </h2>
       <table className="w-[100%]">
         <thead>
-          <tr>
+          <tr className="font-semibold text-gray-700">
             <td className="p-[10px]">Name</td>
             <td className="p-[10px]">Status</td>
             <td className="p-[10px]">Date</td>
@@ -17,7 +18,7 @@ const Transactions = () => {
         <tbody>
           <tr>
             <td className="p-[10px]">
-              <div className="flex gap-[10px] items-center">
+              <div className="flex gap-[10px] text-base text-gray-600 items-center">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -28,16 +29,18 @@ const Transactions = () => {
                 Glen Washington
               </div>
             </td>
-            <td className="p-[10px]">
-              <span className={`${"rounded-md text-[14px]"} ${"bg-stone-700"}`}>
+            <td className="">
+              <span
+                className={`${"rounded-md py-2 px-3 text-[14px]"} ${"bg-stone-600 text-gray-200"}`}
+              >
                 Pending
               </span>
             </td>
-            <td className="p-[10px]">14.02.2024</td>
-            <td className="p-[10px]">$3000</td>
+            <td className="p-[10px] text-gray-600">14.02.2024</td>
+            <td className="p-[10px] text-gray-600">$3000</td>
           </tr>
           <tr>
-            <td className="p-[10px]">
+            <td className="py-2">
               <div className="flex items-center gap-[10px]">
                 <Image
                   src="/noavatar.png"
@@ -50,7 +53,9 @@ const Transactions = () => {
               </div>
             </td>
             <td className="p-[10px]">
-              <span className={`${"rounded-md text-[14px]"} ${"bg-stone-400"}`}>
+              <span
+                className={`${"rounded-md py-2 px-3 text-[14px]"} ${"bg-green-700"}`}
+              >
                 Done
               </span>
             </td>
@@ -59,13 +64,13 @@ const Transactions = () => {
           </tr>
           <tr>
             <td className="p-[10px]">
-              <div className={styles.user}>
+              <div className="flex gap-[10px] items-center">
                 <Image
                   src="/noavatar.png"
                   width={40}
                   height={40}
                   alt=""
-                  className={styles.userImage}
+                  className="object-cover rounded-full"
                 />
                 Benjamin Franklin
               </div>
