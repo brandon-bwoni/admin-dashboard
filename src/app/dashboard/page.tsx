@@ -14,6 +14,10 @@ const Dashboard = () => {
           <Card />
         </div>
         <Transactions />
+        <Chart />
+      </div>
+      <div>
+        <Rightbar />
       </div>
     </div>
   );

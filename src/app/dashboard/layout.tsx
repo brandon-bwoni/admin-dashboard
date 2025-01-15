@@ -5,11 +5,11 @@ import Footer from "@/components/dashboard/Footer";
 
 const DashboardLayout = ({ children }) => {
   return (
-    <div className="w-full flex bg-gray-100">
-      <div className="sticky w-[20%]">
+    <div className="w-full h-full  flex bg-zinc-100">
+      <div className="w-[20%] h-full overflow-y-auto sticky top-0 bg-white shadow-lg">
         <Sidebar />
       </div>
-      <div className="w-[80%] p-5 overflow-y-scroll">
+      <div className="w-[80%] h-full p-5 overflow-y-scroll">
         <Navbar />
         {children}
         <Footer />

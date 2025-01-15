@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Transactions = () => {
   return (
-    <div className="p-5 rounded-xl bg-gray-300 shadow-lg">
+    <div className="p-5 rounded-xl bg-zinc-300 shadow-lg">
       <h2 className="mb-5 font-medium text-2xl text-gray-700">
         Latest Transactions
       </h2>
@@ -40,8 +40,8 @@ const Transactions = () => {
             <td className="p-[10px] text-gray-600">$3000</td>
           </tr>
           <tr>
-            <td className="py-2">
-              <div className="flex items-center gap-[10px]">
+            <td className="py-2 px-2">
+              <div className="flex items-center gap-3 text-gray-600">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -52,19 +52,19 @@ const Transactions = () => {
                 John Doe
               </div>
             </td>
-            <td className="p-[10px]">
+            <td>
               <span
-                className={`${"rounded-md py-2 px-3 text-[14px]"} ${"bg-green-700"}`}
+                className={`${"rounded-md py-2 px-5 text-gray-100 text-[14px]"} ${"bg-green-700"}`}
               >
                 Done
               </span>
             </td>
-            <td className="p-[10px]">14.02.2024</td>
-            <td className="p-[10px]">$3000</td>
+            <td className="p-[10px] text-gray-600">14.02.2024</td>
+            <td className="p-[10px] text-gray-600">$3000</td>
           </tr>
           <tr>
             <td className="p-[10px]">
-              <div className="flex gap-[10px] items-center">
+              <div className="flex gap-[10px] items-center text-gray-600">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -75,15 +75,15 @@ const Transactions = () => {
                 Benjamin Franklin
               </div>
             </td>
-            <td className="p-[10px]">
+            <td>
               <span
-                className={`${"rounded-md text-[14px]"} ${"bg-orange-900"}`}
+                className={`${"rounded-md py-2 px-2 text-gray-100 text-[14px]"} ${"bg-red-700"}`}
               >
                 Cancelled
               </span>
             </td>
-            <td className="p-[10px]">14.02.2024</td>
-            <td className="p-[10px]">$3000</td>
+            <td className="p-[10px] text-gray-600">14.02.2024</td>
+            <td className="p-[10px] text-gray-600">$3000</td>
           </tr>
         </tbody>
       </table>

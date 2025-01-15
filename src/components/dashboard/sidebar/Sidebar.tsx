@@ -79,7 +79,7 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <div className="bg-gray-300 pt-8 px-4 shadow-xl pb-6">
+    <div className="bg-zinc-300 pt-8 px-4 shadow-xl pb-6">
       <div className="flex items-center gap-5 mb-5">
         <Image
           className="rounded-full object-cover"
