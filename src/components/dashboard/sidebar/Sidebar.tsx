@@ -99,7 +99,7 @@ const Sidebar = () => {
       <ul className="list-none">
         {menuItems.map((cat) => (
           <li className="font-bold text-base" key={cat.title}>
-            <span className="font-bold text-[14px] text-slate-700 text my-[10px]">
+            <span className="font-bold text-[14px] text-gray-700 text my-[10px]">
               {cat.title}
             </span>
             {cat.list.map((item) => (
