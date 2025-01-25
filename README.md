@@ -1,4 +1,5 @@
-![Admin Banner]([https://drive.google.com//view?usp=drive_link](https://drive.google.com/file/d/1M1zUwp8l2Rk8VpfoIGSoHpKRwthNPzk7/view))
+![Admin Dashboard Banner](https://github.com/user-attachments/assets/f2aef778-082b-40a0-b4c8-f2e5a641bb02)
+
 # Fullstack E-commerce Admin Dashboard Documentation
 
 ## 1. Project Overview
