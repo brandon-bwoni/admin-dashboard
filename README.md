@@ -4,7 +4,8 @@
 ## 1. Project Overview
 
 ### Title
-E-commerce Dashboard
+
+Admin Dashboard
 
 ### Description
 The E-commerce Dashboard is a fullstack application designed to manage and analyze various aspects of an online store. It provides comprehensive tools for managing users, products, and transactions. Additionally, the dashboard offers revenue analysis, report generation, and team management features, along with settings, help, and logout functionality.
