@@ -3,7 +3,7 @@ import Search from "@/components/dashboard/Search";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProductsPage = ({ placeholder }) => {
+const ProductsPage = () => {
   return (
     <div className="bg-zinc-300 p-5 rounded-xl mt-5">
       <div className="flex justify-between items-center px-2 pt-1 pb-2">
