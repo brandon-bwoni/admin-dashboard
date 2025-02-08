@@ -18,7 +18,7 @@ const Transactions = () => {
         <tbody>
           <tr>
             <td className="p-[10px]">
-              <div className="flex gap-[10px] text-base text-gray-600 items-center">
+              <div className="flex gap-[10px] text-base text-zinc-600 items-center">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -36,12 +36,12 @@ const Transactions = () => {
                 Pending
               </span>
             </td>
-            <td className="p-[10px] text-gray-600">14.02.2024</td>
-            <td className="p-[10px] text-gray-600">$3000</td>
+            <td className="p-[10px] text-zinc-600">14.02.2024</td>
+            <td className="p-[10px] text-zinc-600">$3000</td>
           </tr>
           <tr>
             <td className="py-2 px-2">
-              <div className="flex items-center gap-3 text-gray-600">
+              <div className="flex items-center gap-3 text-zinc-600">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -59,12 +59,12 @@ const Transactions = () => {
                 Done
               </span>
             </td>
-            <td className="p-[10px] text-gray-600">14.02.2024</td>
-            <td className="p-[10px] text-gray-600">$3000</td>
+            <td className="p-[10px] text-zinc-600">14.02.2024</td>
+            <td className="p-[10px] text-zinc-600">$3000</td>
           </tr>
           <tr>
             <td className="p-[10px]">
-              <div className="flex gap-[10px] items-center text-gray-600">
+              <div className="flex gap-[10px] items-center text-zinc-600">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -82,8 +82,8 @@ const Transactions = () => {
                 Cancelled
               </span>
             </td>
-            <td className="p-[10px] text-gray-600">14.02.2024</td>
-            <td className="p-[10px] text-gray-600">$3000</td>
+            <td className="p-[10px] text-zinc-600">14.02.2024</td>
+            <td className="p-[10px] text-zinc-600">$3000</td>
           </tr>
         </tbody>
       </table>

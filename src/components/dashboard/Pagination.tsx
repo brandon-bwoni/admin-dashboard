@@ -7,7 +7,7 @@ const Pagination = () => {
       >
         Previous
       </button>
-      <button className="px-3 hover:shadow-lg disabled:cursor-not-allowed bg-zinc-100 text-gray-600 rounded-lg">
+      <button className="px-3 hover:shadow-lg disabled:cursor-not-allowed bg-zinc-100 text-zinc-600 rounded-lg">
         Next
       </button>
     </div>

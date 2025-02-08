@@ -12,14 +12,14 @@ const UsersPage = async ({ placeholder }) => {
       <div className="flex justify-between items-center">
         <Search placeholder="Search for a user.." />
         <Link href="/dashboard/users/add-user">
-          <button className="p-2 bg-indigo-400/50 text-gray-600 border-none rounded-md cursor-pointer">
+          <button className="p-2 bg-zinc-600 hover:bg-zinc-500 hover:text-white font-medium text-zinc-100 border-none rounded-md cursor-pointer">
             Add New
           </button>
         </Link>
       </div>
       <table className="w-full my-4">
         <thead>
-          <tr className="text-gray-600 font-semibold">
+          <tr className="text-zinc-600 font-semibold">
             <td className="px-6">Name</td>
             <td className="px-6">Email</td>
             <td className="px-6">Role</td>
@@ -47,14 +47,14 @@ const UsersPage = async ({ placeholder }) => {
               <div className="flex gap-2">
                 <Link href="/dashboard/users/id">
                   <button
-                    className={`${"py-2 px-3 rounded-md text-gray-600 border-none cursor-pointer"} ${"bg-teal-600/50 text-gray-100 hover:bg-emerald-600 hover:text-white"}`}
+                    className={`${"py-2 px-3 rounded-md text-zinc-600 font-medium border-none cursor-pointer"} ${"bg-teal-600/70 text-gray-100 hover:bg-teal-600 hover:text-white"}`}
                   >
                     View
                   </button>
                 </Link>
                 <Link href="/">
                   <button
-                    className={`${"py-2 px-3 rounded-md text-gray-600 border-none cursor-pointer"} ${"bg-red-600/50 hover:bg-red-600 hover:text-white"}`}
+                    className={`${"py-2 px-3 rounded-md font-medium text-zinc-600 border-none cursor-pointer"} ${"bg-red-600/50 hover:bg-red-600 hover:text-white"}`}
                   >
                     Delete
                   </button>

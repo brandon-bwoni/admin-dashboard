@@ -15,10 +15,10 @@ const Rightbar = () => {
           />
         </div>
         <div className="flex flex-col gap-4 ">
-          <span className="font-bold text-center pt-3 text-gray-600 text-lg">
+          <span className="font-bold text-center pt-3 text-zinc-600 text-lg">
             Available now
           </span>
-          <h3 className="font-medium text-[12px] text-gray-600 px-4">
+          <h3 className="font-medium text-[12px] text-zinc-600 px-4">
             How to use the new version of the admin dashboard
           </h3>
           <span className="text-gray-500 font-medium text-[12px] px-4">
@@ -40,14 +40,14 @@ const Rightbar = () => {
       {/* Item-2 */}
       <div className="bg bg-gradient-to-t from-zinc-300 to-slate-100 mt-4 bg-gray-300 rounded-2xl shadow-lg">
         <div className="flex flex-col gap-4 ">
-          <span className="font-bold text-center pt-3 text-gray-600 text-lg">
+          <span className="font-bold text-center pt-3 text-zinc-600 text-lg">
             Coming soon
           </span>
-          <h3 className="font-medium text-[12px] text-gray-600 px-4">
+          <h3 className="font-medium text-[12px] text-zinc-600 px-4">
             New server actions are available, partial pre-rendering in coming
             upi
           </h3>
-          <span className="font-medium text-[12px] text-gray-600 px-4">
+          <span className="font-medium text-[12px] text-zinc-600 px-4">
             Save your productivity
           </span>
           <p className="text-gray-500 text-[14px] px-4">
@@ -66,14 +66,14 @@ const Rightbar = () => {
       {/* Item-3 */}
       <div className="bg-gradient-to-t from-zinc-300 to-slate-100 mt-4 rounded-2xl shadow-lg">
         <div className="flex flex-col gap-4 ">
-          <span className="font-bold text-center pt-3 text-gray-600 text-lg">
+          <span className="font-bold text-center pt-3 text-zinc-600 text-lg">
             Coming soon
           </span>
-          <h3 className="font-medium text-[12px] text-gray-600 px-4">
+          <h3 className="font-medium text-[12px] text-zinc-600 px-4">
             New server actions are available, partial pre-rendering in coming
             upi
           </h3>
-          <span className="font-medium text-[12px] text-gray-600 px-4">
+          <span className="font-medium text-[12px] text-zinc-600 px-4">
             Save your productivity
           </span>
           <p className="text-gray-500 text-[14px] px-4">
