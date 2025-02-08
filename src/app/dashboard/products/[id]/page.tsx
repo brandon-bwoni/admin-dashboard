@@ -3,7 +3,7 @@ import Image from "next/image";
 const SingleProductPage = () => {
   return (
     <div className="flex gap-10 mt-5">
-      <div className="flex flex-col w-[30%] h-72 bg-zinc-300 p-5 rounded-xl font-bold text-zinc-600 max-h-max text-lg shadow-lg ">
+      <div className="flex flex-col w-[30%] h-72 bg-zinc-300 p-5 rounded-xl font-bold text-zinc-700 max-h-max text-lg shadow-lg ">
         <div className=" w-[100%] h-[300px] relative rounded-lg overflow-hidden mb-5">
           <Image src="/noavatar.png" fill alt="" />
         </div>
@@ -13,42 +13,42 @@ const SingleProductPage = () => {
         <form className="w-full flex text-gray-700 flex-col">
           <label className="mb-1 font-semibold">Title</label>
           <input
-            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-600 mx-3 mb-3"
+            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-700 mx-3 mb-3"
             type="text"
             name="title"
             placeholder="Ben Frank"
           />
           <label className="mb-1 font-semibold">Price</label>
           <input
-            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-600 mx-3 mb-3"
+            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-700 mx-3 mb-3"
             type="number"
             name="price"
             placeholder="0"
           />
           <label className="mb-1 font-semibold">Stock</label>
           <input
-            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-600 mx-3 mb-3"
+            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-700 mx-3 mb-3"
             type="number"
             name="stock"
             placeholder="o"
           />
           <label className="mb-1 font-semibold">Color</label>
           <input
-            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-600 mx-3 mb-3"
+            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-700 mx-3 mb-3"
             type="text"
             name="color"
             placeholder="white"
           />
           <label className="mb-1 font-semibold">Address</label>
           <textarea
-            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-600 mx-3 mb-3"
+            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-700 mx-3 mb-3"
             type="text"
             name="address"
             placeholder="New York"
           />
           <label className="mb-1 font-semibold">Category</label>
           <select
-            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-600 mx-3 mb-3"
+            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-700 mx-3 mb-3"
             name="cat"
             id="cat"
           >
@@ -57,7 +57,7 @@ const SingleProductPage = () => {
           </select>
           <label className="mb-1 font-semibold">Description</label>
           <textarea
-            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-600 mx-3 mb-3"
+            className="p-5 border-2 border-zinc-400 rounded-md bg-zinc-300 text-zinc-700 mx-3 mb-3"
             name="desc"
             id="desc"
             rows="10"

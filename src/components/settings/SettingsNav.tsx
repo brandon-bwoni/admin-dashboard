@@ -44,7 +44,7 @@ const SettingsNav = () => {
         {links.map((link, index) => (
           <li
             key={index}
-            className={`px-3 py-2 text-xs font-semibold bg-zinc-300 rounded-lg text-zinc-600 hover:text-gray-800 hover:bg-zinc-400 ${
+            className={`px-3 py-2 text-xs font-semibold bg-zinc-300 rounded-lg text-zinc-700 hover:text-gray-800 hover:bg-zinc-400 ${
               pathname === link.link ? "bg-zinc-400 text-gray-800" : ""
             }`}
           >

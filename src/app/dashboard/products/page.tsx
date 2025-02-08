@@ -16,7 +16,7 @@ const ProductsPage = () => {
       </div>
       <table className="w-[100%]">
         <thead>
-          <tr className="text-zinc-600 font-semibold">
+          <tr className="text-zinc-700 font-semibold">
             <td className="px-4 py-3">Title</td>
             <td className="px-4 py-3">Description</td>
             <td className="px-4 py-3">Price</td>
