@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -7,7 +8,23 @@ import { MdCurrencyExchange } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 
 const GeneralSettings = () => {
-  // const [image, setImage] = useState(false);
+  const [image, setImage] = useState("");
+
+  const handleChange = (event) => {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+
+    reader.onload = (e) => {
+      setImage(e.target?.result);
+    };
+
+    reader.onerror = () => {
+      console.log("There was an error reading the file");
+    };
+  };
 
   return (
     <>
@@ -46,20 +63,23 @@ const GeneralSettings = () => {
           </div>
         </div>
         {/* Avatar */}
-        <div className="w-40 flex flex-col items-center justify-center">
-          <label htmlFor="image">
+        <div className="flex flex-col items-center justify-center border">
+          <label
+            htmlFor="image"
+            className="flex flex-col items-center justify-start"
+          >
             <p className="font-semibold text-zinc-700 text-center">Avatar</p>
-            <Image
-              src={avatar}
-              width={140}
-              height={70}
-              alt=""
-              className="flex justify-center mt-1 w-16 h-16 border text-zinc-700 rounded-full hover:cursor-pointer "
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleChange}
+              placeholder="Upload your avatar"
             />
+            {image && <Image src={image} alt="Uploaded Preview" />}
           </label>
-          <button className="text-center bg-zinc-200 py-2 px-3 my-2 rounded-lg text-medium hover:bg-zinc-300 text-sm text-zinc-700">
+          {/* <button className="text-center bg-zinc-200 py-2 px-3 my-2 rounded-lg text-medium hover:bg-zinc-300 text-sm text-zinc-700">
             Change avatar
-          </button>
+          </button> */}
         </div>
         {/* Store URl */}
         <div>
@@ -86,13 +106,16 @@ const GeneralSettings = () => {
         {/* Country*/}
         <div>
           <h1 className="font-semibold text-zinc-700">Country</h1>
-          <span className="w-28 flex flex-col justify-center items-center text-gray-400 text-xs">
+          <span className="w-28 flex flex-col justify-center items-center text-gray-400 text-xs gap-1">
             <Image
               src={avatar}
               alt="Country name"
-              className="w-10 h-10 rounded-full mt-1"
+              width={16}
+              height={16}
+              className="w-6 h-6 rounded-full mt-1"
+              unoptimized
             />
-            Zimbabwe
+            <p className="text-xs">Zimbabwe</p>
           </span>
           <div className="flex items-center gap-2">
             <p>
@@ -101,7 +124,7 @@ const GeneralSettings = () => {
             <select
               name="cat"
               id="cat"
-              className="w-[45%] my-1 py-2 px-3 text-zinc-700 rounded-lg"
+              className="w-[45%] my-1 py-2 px-3 text-sm text-zinc-700 rounded-lg"
             >
               <option value="general">--Select your country --</option>
               <option value="kitchen">Zimbabwe</option>
@@ -120,7 +143,7 @@ const GeneralSettings = () => {
             <select
               name="cat"
               id="cat"
-              className="w-[45%] my-1 py-2 px-3 text-zinc-700 rounded-lg"
+              className="w-[45%] my-1 py-2 px-3 text-zinc-700 rounded-lg text-sm"
             >
               <option value="general">--Choose your currency --</option>
               <option value="kitchen">Rupees</option>

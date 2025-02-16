@@ -9,7 +9,7 @@ const DashboardLayout = ({ children }) => {
       <div className="w-[20%] h-full overflow-y-auto sticky top-0 bg-white shadow-lg">
         <Sidebar />
       </div>
-      <div className="w-[80%] h-full p-5 overflow-y-scroll">
+      <div className="w-[80%] h-full p-3 overflow-y-scroll">
         <Navbar />
         {children}
         <Footer />

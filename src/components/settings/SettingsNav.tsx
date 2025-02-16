@@ -25,7 +25,7 @@ const SettingsNav = () => {
       link: `${basePath}/user-management`,
     },
     {
-      title: "Security",
+      title: "Security & Privacy",
       link: `${basePath}/security-privacy`,
     },
     {
