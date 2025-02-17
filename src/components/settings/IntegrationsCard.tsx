@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
+import { SwitchToggle } from "./UI/SwitchToggle";
 
 interface IntegrationsCardProps {
   image: StaticImageData;
@@ -14,9 +15,12 @@ const IntegrationsCard = ({
 }: IntegrationsCardProps) => {
   return (
     <div className="w-72 flex flex-col gap-3 cursor-pointer  bg-zinc-300 p-3 rounded-xl hover:shadow-lg">
-      <div className="flex gap-1 justify-start items-center">
-        <Image src={image} alt="" className="w-14 h-14 rounded-full" />
-        <span className="font-semibold text-zinc-700">{name}</span>
+      <div className="flex justify-between pr-3 items-center">
+        <div className="flex gap-1 justify-start items-center">
+          <Image src={image} alt="" className="w-12 h-12 rounded-full" />
+          <span className="font-semibold text-zinc-700">{name}</span>
+        </div>
+        <SwitchToggle />
       </div>
       <div className="flex flex-col justify-end gap-5 ">
         <span className="text-sm  text-zinc-600 leading-4 ">{description}</span>
