@@ -19,7 +19,7 @@ const UsersPage = async ({ placeholder }) => {
       </div>
       <table className="w-full my-4">
         <thead>
-          <tr className="text-zinc-700 font-semibold">
+          <tr className="text-black font-semibold">
             <td className="px-6">Name</td>
             <td className="px-6">Email</td>
             <td className="px-6">Role</td>
@@ -47,14 +47,14 @@ const UsersPage = async ({ placeholder }) => {
               <div className="flex gap-2">
                 <Link href="/dashboard/users/id">
                   <button
-                    className={`${"py-2 px-3 rounded-md text-zinc-700 font-medium border-none cursor-pointer"} ${"bg-teal-600/70 text-gray-100 hover:bg-teal-600 hover:text-white"}`}
+                    className={`${"py-2 px-3 rounded-md text-black font-medium border-none cursor-pointer"} ${"bg-teal-600/70 text-gray-100 hover:bg-teal-600 hover:text-white"}`}
                   >
                     View
                   </button>
                 </Link>
                 <Link href="/">
                   <button
-                    className={`${"py-2 px-3 rounded-md font-medium text-zinc-700 border-none cursor-pointer"} ${"bg-red-600/50 hover:bg-red-600 hover:text-white"}`}
+                    className={`${"py-2 px-3 rounded-md font-medium text-black border-none cursor-pointer"} ${"bg-red-600/50 hover:bg-red-600 hover:text-white"}`}
                   >
                     Delete
                   </button>

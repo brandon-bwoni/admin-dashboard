@@ -4,13 +4,11 @@ const Card = () => {
   return (
     <div className="w-[100%] flex flex-col gap-3 cursor-pointer  bg-zinc-300 p-5 rounded-xl shadow-lg">
       <div className="flex gap-4 justify-center items-center">
-        <MdSupervisedUserCircle className="h-8 w-8 text-zinc-700" />
-        <span className="text-2xl font-semibold text-zinc-700">
-          Total Users
-        </span>
+        <MdSupervisedUserCircle className="h-8 w-8 text-black" />
+        <span className="text-2xl font-semibold text-black">Total Users</span>
       </div>
       <div className="flex flex-col justify-center gap-5">
-        <span className="text-[24px] text-center text-zinc-700 font-bold">
+        <span className="text-[24px] text-center text-black font-bold">
           10.273
         </span>
         <span className="text-[14px] font-light">

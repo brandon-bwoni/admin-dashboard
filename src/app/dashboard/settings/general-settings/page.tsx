@@ -29,11 +29,11 @@ const GeneralSettings = () => {
   return (
     <>
       <div className="flex justify-between items-center">
-        <h1 className="text-base font-bold text text-zinc-700">
+        <h1 className="text-base font-bold text text-black">
           General Settings
         </h1>
         <div className="flex gap-2 b">
-          <button className="py-2 px-3 font-medium text-sm hover:bg-zinc-300 hover:text-zinc-700 text-zinc-700 rounded-md cursor-pointer hover:border-none">
+          <button className="py-2 px-3 font-medium text-sm hover:bg-zinc-300 hover:text-black text-black rounded-md cursor-pointer hover:border-none">
             Cancel
           </button>
           <button className="py-2 px-3 text-sm font-medium  hover:bg-zinc-500 hover:text-white bg-zinc-600 text-gray-100 border-none rounded-md cursor-pointer active:bg-zinc-800">
@@ -44,7 +44,7 @@ const GeneralSettings = () => {
       <div className="flex flex-col justify-center gap-3">
         {/* Store name */}
         <div>
-          <h1 className="font-semibold text-zinc-700">Store name</h1>
+          <h1 className="font-semibold text-black">Store name</h1>
           <p className=" text-zinc-400 text-[13px] ml-2">Challenger store</p>
           <div className="flex gap-8 pt-1">
             <input
@@ -53,7 +53,7 @@ const GeneralSettings = () => {
               placeholder="Challengers store"
             />
             <div className="flex gap-4">
-              <button className="text-sm py-2 px-3 rounded-md hover:bg-zinc-200 text-zinc-700 ">
+              <button className="text-sm py-2 px-3 rounded-md hover:bg-zinc-200 text-black ">
                 Edit
               </button>
               <button className="text-sm py-2 px-3 rounded-md bg-zinc-400 text-gray-100 hover:bg-zinc-500 hover:text-white">
@@ -68,7 +68,7 @@ const GeneralSettings = () => {
             htmlFor="image"
             className="flex flex-col items-center justify-start"
           >
-            <p className="font-semibold text-zinc-700 text-center">Avatar</p>
+            <p className="font-semibold text-black text-center">Avatar</p>
             <input
               type="file"
               accept="image/*"
@@ -77,13 +77,13 @@ const GeneralSettings = () => {
             />
             {image && <Image src={image} alt="Uploaded Preview" />}
           </label>
-          {/* <button className="text-center bg-zinc-200 py-2 px-3 my-2 rounded-lg text-medium hover:bg-zinc-300 text-sm text-zinc-700">
+          {/* <button className="text-center bg-zinc-200 py-2 px-3 my-2 rounded-lg text-medium hover:bg-zinc-300 text-sm text-black">
             Change avatar
           </button> */}
         </div>
         {/* Store URl */}
         <div>
-          <h1 className="font-semibold text-zinc-700">Store URL</h1>
+          <h1 className="font-semibold text-black">Store URL</h1>
           <p className=" text-zinc-400 text-[13px] ml-2">
             https://challengerstore.com
           </p>
@@ -94,7 +94,7 @@ const GeneralSettings = () => {
               placeholder=".com"
             />
             <div className="flex gap-4">
-              <button className="text-sm py-2 px-3 rounded-md hover:bg-zinc-200 text-zinc-700 ">
+              <button className="text-sm py-2 px-3 rounded-md hover:bg-zinc-200 text-black ">
                 Edit
               </button>
               <button className="text-sm py-2 px-3 rounded-md bg-zinc-400 text-gray-100 hover:bg-zinc-500 hover:text-white">
@@ -105,7 +105,7 @@ const GeneralSettings = () => {
         </div>
         {/* Country*/}
         <div>
-          <h1 className="font-semibold text-zinc-700">Country</h1>
+          <h1 className="font-semibold text-black">Country</h1>
           <span className="w-28 flex flex-col justify-center items-center text-gray-400 text-xs gap-1">
             <Image
               src={avatar}
@@ -119,12 +119,12 @@ const GeneralSettings = () => {
           </span>
           <div className="flex items-center gap-2">
             <p>
-              <BsGlobeEuropeAfrica className="w-6 h-6 text-zinc-700" />
+              <BsGlobeEuropeAfrica className="w-6 h-6 text-black" />
             </p>
             <select
               name="cat"
               id="cat"
-              className="w-[45%] my-1 py-2 px-3 text-sm text-zinc-700 rounded-lg"
+              className="w-[45%] my-1 py-2 px-3 text-sm text-black rounded-lg"
             >
               <option value="general">--Select your country --</option>
               <option value="kitchen">Zimbabwe</option>
@@ -134,7 +134,7 @@ const GeneralSettings = () => {
           </div>
         </div>
         <div>
-          <h1 className="font-semibold text-zinc-700">Currency</h1>
+          <h1 className="font-semibold text-black">Currency</h1>
           <p className="text-gray-400 text-xs ml-2">Zimbabwe</p>
           <div className="flex items-center gap-2">
             <p>
@@ -143,7 +143,7 @@ const GeneralSettings = () => {
             <select
               name="cat"
               id="cat"
-              className="w-[45%] my-1 py-2 px-3 text-zinc-700 rounded-lg text-sm"
+              className="w-[45%] my-1 py-2 px-3 text-black rounded-lg text-sm"
             >
               <option value="general">--Choose your currency --</option>
               <option value="kitchen">Rupees</option>
@@ -154,7 +154,7 @@ const GeneralSettings = () => {
         </div>
         {/* Contact email */}
         <div>
-          <h1 className="font-semibold text-zinc-700">Contact email</h1>
+          <h1 className="font-semibold text-black">Contact email</h1>
           <p className=" text-zinc-400 text-[13px] ml-2">
             challangestore@gmail.com
           </p>
@@ -168,7 +168,7 @@ const GeneralSettings = () => {
               placeholder="example.com"
             />
             <div className="flex gap-4">
-              <button className="text-sm py-2 px-3 rounded-md hover:bg-zinc-200 text-zinc-700 ">
+              <button className="text-sm py-2 px-3 rounded-md hover:bg-zinc-200 text-black ">
                 Edit
               </button>
               <button className="text-sm py-2 px-3 rounded-md bg-zinc-400 text-gray-100 hover:bg-zinc-500 hover:text-white">
@@ -179,7 +179,7 @@ const GeneralSettings = () => {
         </div>
         {/* Tax */}
         <div>
-          <h1 className="font-semibold text-zinc-700">Percentage tax</h1>
+          <h1 className="font-semibold text-black">Percentage tax</h1>
           <p className=" text-zinc-400 text-[13px] ml-2">25%</p>
           <div className="flex items-center gap-2 pt-1">
             <input
@@ -188,7 +188,7 @@ const GeneralSettings = () => {
               placeholder="0"
             />
             <div className="flex gap-4">
-              <button className="text-sm py-2 px-3 rounded-md hover:bg-zinc-200 text-zinc-700 ">
+              <button className="text-sm py-2 px-3 rounded-md hover:bg-zinc-200 text-black ">
                 Edit
               </button>
               <button className="text-sm py-2 px-3 rounded-md bg-zinc-400 text-gray-100 hover:bg-zinc-500 hover:text-white">

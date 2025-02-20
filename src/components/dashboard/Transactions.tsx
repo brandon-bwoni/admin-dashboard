@@ -3,12 +3,12 @@ import Image from "next/image";
 const Transactions = () => {
   return (
     <div className="p-5 rounded-xl bg-zinc-300 shadow-lg">
-      <h2 className="mb-5 font-medium text-2xl text-gray-700">
+      <h2 className="mb-5 font-medium text-2xl text-black">
         Latest Transactions
       </h2>
       <table className="w-[100%]">
         <thead>
-          <tr className="font-semibold text-gray-700">
+          <tr className="font-semibold text-black">
             <td className="p-[10px]">Name</td>
             <td className="p-[10px]">Status</td>
             <td className="p-[10px]">Date</td>
@@ -18,7 +18,7 @@ const Transactions = () => {
         <tbody>
           <tr>
             <td className="p-[10px]">
-              <div className="flex gap-[10px] text-base text-zinc-700 items-center">
+              <div className="flex gap-[10px] text-base text-black items-center">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -36,12 +36,12 @@ const Transactions = () => {
                 Pending
               </span>
             </td>
-            <td className="p-[10px] text-zinc-700">14.02.2024</td>
-            <td className="p-[10px] text-zinc-700">$3000</td>
+            <td className="p-[10px] text-black">14.02.2024</td>
+            <td className="p-[10px] text-black">$3000</td>
           </tr>
           <tr>
             <td className="py-2 px-2">
-              <div className="flex items-center gap-3 text-zinc-700">
+              <div className="flex items-center gap-3 text-black">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -59,12 +59,12 @@ const Transactions = () => {
                 Done
               </span>
             </td>
-            <td className="p-[10px] text-zinc-700">14.02.2024</td>
-            <td className="p-[10px] text-zinc-700">$3000</td>
+            <td className="p-[10px] text-black">14.02.2024</td>
+            <td className="p-[10px] text-black">$3000</td>
           </tr>
           <tr>
             <td className="p-[10px]">
-              <div className="flex gap-[10px] items-center text-zinc-700">
+              <div className="flex gap-[10px] items-center text-black">
                 <Image
                   src="/noavatar.png"
                   width={40}
@@ -82,8 +82,8 @@ const Transactions = () => {
                 Cancelled
               </span>
             </td>
-            <td className="p-[10px] text-zinc-700">14.02.2024</td>
-            <td className="p-[10px] text-zinc-700">$3000</td>
+            <td className="p-[10px] text-black">14.02.2024</td>
+            <td className="p-[10px] text-black">$3000</td>
           </tr>
         </tbody>
       </table>

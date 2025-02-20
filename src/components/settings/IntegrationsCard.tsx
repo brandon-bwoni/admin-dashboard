@@ -18,12 +18,12 @@ const IntegrationsCard = ({
       <div className="flex justify-between pr-3 items-center">
         <div className="flex gap-1 justify-start items-center">
           <Image src={image} alt="" className="w-12 h-12 rounded-full" />
-          <span className="font-semibold text-zinc-700">{name}</span>
+          <span className="font-semibold text-black">{name}</span>
         </div>
         <SwitchToggle />
       </div>
       <div className="flex flex-col justify-end gap-5 ">
-        <span className="text-sm  text-zinc-600 leading-4 ">{description}</span>
+        <span className="text-sm  text-black leading-4 ">{description}</span>
       </div>
       <div className="flex justify-end">
         <Link href="" className="">

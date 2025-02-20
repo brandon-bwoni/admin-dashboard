@@ -20,10 +20,10 @@ const SettingsNav = () => {
       title: "Notifications",
       link: `${basePath}/notifications`,
     },
-    {
-      title: "User Management",
-      link: `${basePath}/user-management`,
-    },
+    // {
+    //   title: "User Management",
+    //   link: `${basePath}/user-management`,
+    // },
     {
       title: "Security & Privacy",
       link: `${basePath}/security-privacy`,
@@ -40,11 +40,11 @@ const SettingsNav = () => {
 
   return (
     <div>
-      <ul className="flex flex-row gap-4 py-4">
+      <ul className="flex flex-row gap-8 py-4">
         {links.map((link, index) => (
           <li
             key={index}
-            className={`px-3 py-2 text-xs font-semibold bg-zinc-300 rounded-lg text-zinc-700 hover:text-gray-800 hover:bg-zinc-400 ${
+            className={`px-3 py-2 text-xs font-semibold bg-zinc-300 rounded-lg text-black hover:text-gray-800 hover:bg-zinc-400 ${
               pathname === link.link ? "bg-zinc-400 text-gray-800" : ""
             }`}
           >
