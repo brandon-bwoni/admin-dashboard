@@ -6,16 +6,16 @@ import { z } from "zod";
 
 import {
   Form,
-  FormControl,
+  // FormControl,
   FormDescription,
   FormField,
   FormItem,
   FormLabel,
 } from "@/components/ui/form";
-import { Switch } from "@/components/ui/switch";
+// import { Switch } from "@/components/ui/switch";
 
 const FormSchema = z.object({
-  marketing_emails: z.boolean().default(false).optional(),
+  update_password: z.boolean().default(false).optional(),
   security_emails: z.boolean(),
   billing_emails: z.boolean(),
   messages: z.boolean(),
@@ -45,26 +45,26 @@ export default function AccountSettings() {
   return (
     <Form {...form}>
       <form onSubmit={() => {}} className="w-full space-y-6">
-        <div className="flex flex-col gap-2">
-          <h3 className="mb-4 text-lg font-medium">Account Details</h3>
-          <div className="space-y-4">
+        <div className="flex flex-col border p-3 rounded-lg gap-2">
+          <h3 className=" font-semibold">Account Details</h3>
+          <div className="space-y-2">
             <FormField
               control={form.control}
-              name="marketing_emails"
-              render={({ field }) => (
+              name="update_password"
+              render={() => (
                 <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
                   <div className="space-y-0.5">
-                    <FormLabel>Marketing emails</FormLabel>
+                    <FormLabel>Verify Email Address</FormLabel>
                     <FormDescription>
                       Receive emails about new products, features, and more.
                     </FormDescription>
                   </div>
-                  <FormControl>
-                    <Switch
-                      checked={field.value}
-                      onCheckedChange={field.onChange}
-                    />
-                  </FormControl>
+                  <button
+                    type="submit"
+                    className="flex justify-center px-12 py-1 rounded-lg bg-green-100 text-green-700 text-sm"
+                  >
+                    Verified
+                  </button>
                 </FormItem>
               )}
             />
@@ -72,57 +72,113 @@ export default function AccountSettings() {
           <div className="space-y-4">
             <FormField
               control={form.control}
-              name="marketing_emails"
-              render={({ field }) => (
+              name="update_password"
+              render={() => (
                 <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
                   <div className="space-y-0.5">
-                    <FormLabel>Marketing emails</FormLabel>
+                    <FormLabel>Update Password</FormLabel>
                     <FormDescription>
-                      Receive emails about new products, features, and more.
+                      Change your password to update & protect your Account.
                     </FormDescription>
                   </div>
-                  <FormControl>
-                    <Switch
-                      checked={field.value}
-                      onCheckedChange={field.onChange}
-                    />
-                  </FormControl>
+                  <button
+                    type="submit"
+                    className="px-4 text-sm py-1 rounded-lg border text-black"
+                  >
+                    Change Password
+                  </button>
                 </FormItem>
               )}
             />
           </div>
         </div>
-        <div>
-          <h3 className="mb-4 text-lg font-medium">Pop Notifications</h3>
-          <div className="space-y-4">
+        <div className="flex flex-col p-3 rounded-lg border">
+          <h3 className="mb-2  font-semibold">Recovery Settings</h3>
+          <div className="space-y-1">
             <FormField
               control={form.control}
               name="messages"
-              render={({ field }) => (
+              render={() => (
                 <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
                   <div className="space-y-0.5">
-                    <FormLabel>Messages</FormLabel>
+                    <FormLabel>Recovery Email Address</FormLabel>
                     <FormDescription>
-                      Receive pop up notifications of messages
+                      Setup Recovery Email to Secure your Account.
                     </FormDescription>
                   </div>
-                  <FormControl>
-                    <Switch
-                      checked={field.value}
-                      onCheckedChange={field.onChange}
-                    />
-                  </FormControl>
+                  <button
+                    type="submit"
+                    className="px-3 py-2 rounded-lg hover:shadow-lg bg-black text-white"
+                  >
+                    Save
+                  </button>
+                </FormItem>
+              )}
+            />
+            <h1 className="text-sm text-zinc-700 px-2">
+              Another email address
+            </h1>
+            <input
+              type="email"
+              placeholder="example@email.com"
+              className="w-96 py-2 px-3 rounded-lg"
+            />
+          </div>
+
+          <div className="mt-2">
+            <FormField
+              control={form.control}
+              name="messages"
+              render={() => (
+                <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
+                  <div className="space-y-0.5">
+                    <FormLabel>Recovery Phone Number</FormLabel>
+                    <FormDescription>
+                      Add phone number to Setup SMS Recovery for your account.
+                    </FormDescription>
+                  </div>
+                  <button
+                    type="submit"
+                    className="px-3 py-2 rounded-lg hover:shadow-lg border text-black"
+                  >
+                    Setup
+                  </button>
                 </FormItem>
               )}
             />
           </div>
         </div>
-        <button
+        <div className="p-3">
+          <div className="space-y-2">
+            <FormField
+              control={form.control}
+              name="update_password"
+              render={() => (
+                <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
+                  <div className="space-y-0.5">
+                    <FormLabel>Deactivate Account</FormLabel>
+                    <FormDescription>
+                      This will shut down your account, and it will activate
+                      once you Sign In
+                    </FormDescription>
+                  </div>
+                  <button
+                    type="submit"
+                    className="flex justify-center px-12 py-1 rounded-lg bg-green-100 text-green-700 text-sm"
+                  >
+                    Verified
+                  </button>
+                </FormItem>
+              )}
+            />
+          </div>
+        </div>
+        {/* <button
           type="submit"
           className="px-3 py-2 rounded-lg hover:shadow-lg hover:bg-zinc-500 bg-zinc-700 text-white"
         >
           Save changes
-        </button>
+        </button> */}
       </form>
     </Form>
   );

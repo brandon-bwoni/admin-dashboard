@@ -45,8 +45,8 @@ export default function AuthSettings() {
   return (
     <Form {...form}>
       <form onSubmit={() => {}} className="w-full space-y-6">
-        <div>
-          <h3 className="mb-4 text-lg font-medium">
+        <div className="flex flex-col border p-3 rounded-lg">
+          <h3 className="mb-2 text-lg font-medium">
             Two-factor Authentication
           </h3>
           <div className="space-y-4">
@@ -71,38 +71,39 @@ export default function AuthSettings() {
               )}
             />
           </div>
-        </div>
-        <div>
-          <h3 className="mb-4 text-lg font-medium">Pop Notifications</h3>
-          <div className="space-y-4">
-            <FormField
-              control={form.control}
-              name="messages"
-              render={({ field }) => (
-                <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
-                  <div className="space-y-0.5">
-                    <FormLabel>Messages</FormLabel>
-                    <FormDescription>
-                      Receive pop up notifications of messages
-                    </FormDescription>
-                  </div>
-                  <FormControl>
-                    <Switch
-                      checked={field.value}
-                      onCheckedChange={field.onChange}
-                    />
-                  </FormControl>
-                </FormItem>
-              )}
-            />
+
+          <div>
+            <h3 className="mb-4 text-lg font-medium">Pop Notifications</h3>
+            <div className="space-y-4">
+              <FormField
+                control={form.control}
+                name="messages"
+                render={({ field }) => (
+                  <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
+                    <div className="space-y-0.5">
+                      <FormLabel>Messages</FormLabel>
+                      <FormDescription>
+                        Receive pop up notifications of messages
+                      </FormDescription>
+                    </div>
+                    <FormControl>
+                      <Switch
+                        checked={field.value}
+                        onCheckedChange={field.onChange}
+                      />
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
+            </div>
           </div>
         </div>
-        <button
+        {/* <button
           type="submit"
           className="px-3 py-2 rounded-lg hover:shadow-lg hover:bg-zinc-500 bg-zinc-700 text-white"
         >
           Save changes
-        </button>
+        </button> */}
       </form>
     </Form>
   );
